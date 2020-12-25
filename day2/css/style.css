@@ -1,0 +1,151 @@
+/* 
+body is selector here consisting of property value pairs 
+*/
+
+/*
+default font setup by the browser is Times New Roman 
+
+font-family
+Establishes the font family/families. Standard choices include:
+
+sans-serif: Arial, Helvetica, Trebuchet MS, Verdana
+serif: Times, Times New Roman, Georgia
+monospace: Courier
+
+serif - with little things hanging around on letters and sans serif is without serif 
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+img {
+    border: 5px solid black;
+}
+
+h1 {
+    border: 2px dotted black;
+}
+
+/*
+rem = relative em
+em = width of the letter 'm'
+1 em = 16px (default for Times New Roman 'm')
+1 em will always be 16px for all fonts but it might lok bigger or smaller depending on the font styling
+*/
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+cite {
+    font-size: 1.25rem;
+}
+
+/*
+class names start with a dot
+*/
+
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/*
+x/y rem indicates size/line spacing
+*/
+.p2 {
+    font: normal 0.8rem/1.4rem Georgia, 'Times New Roman', Times, serif;
+}
+
+.p_monospace {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5rem;
+    color: brown;
+    background-color: yellowgreen;
+}
+
+.p_serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    color: black;
+    background: whitesmoke url(https://placekitten.com/200/300) no-repeat top left;
+    height: 300px;
+}
+
+.p_sans_serif {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 0.4rem;
+    color: crimson;
+}
+
+.align_center {
+    text-align: center;
+}
+
+a.a1 {
+    text-decoration: none;
+}
+
+/*
+Link Pseudo classes = states of the links - have to be in this order - link, visited, focus, hover, active
+*/
+a.a2:link {
+    color: blue;
+}
+
+a.a2:visited {
+    color: purple;
+    font-size: 3rem;
+    background-color: black;
+}
+
+a.a2:focus {
+    border: 3px dotted tomato;
+}
+
+a.a2:hover {
+    color: teal;
+    font-size: 3rem;
+}
+
+a.a2:active {
+    color: yellow;
+}
+
+p.p_sans_serif:hover {
+    font-size: 3rem;
+    background-color: brown;
+}
+
+/*
+Descendant Selector
+*/
+
+blockquote cite {
+    font-stretch: extra-condensed;
+    color: brown;
+    /* this will be overriden by the style attribute specified for Jen Kramer citation*/
+    font-size: 0.9rem;
+}
+
+/*
+How cascading works in CSS - the last declaration always wins, if you have embedded style (<style>) or external style sheet (<link>), the one which is last in order wins. Similarly, in a style sheet, if you have 2 declarations for font-size of selector p, the last one wins.
+*/
+
+/*
+Grouping Selectors
+*/
+/*
+h1, h2, .bigbold, a:link {
+    border: dotted black;
+}
+*/
+
+/*
+#id can also be used instead of .class, but .class is preferred. id is more useful in javascript
+*/

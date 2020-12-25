@@ -1,0 +1,103 @@
+body {
+    background-color: cornsilk;
+    padding: 1rem;
+    text-align: justify;
+} 
+
+h1 {
+    text-align: center;
+}
+
+/*
+content surrounded by padding -> border -> margin
+*/
+
+.div1 {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.div2 {
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.div3 {
+    padding: 0rem 1.5rem 0rem 1rem;
+}
+
+.div4 {
+    background-image: url(https://placekitten.com/200/287);
+    height: 17rem;
+}
+
+.books {
+    float: right;
+    width: 25%;
+    height: 25%;
+    border: 3px solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+footer {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+blockquote {
+    text-align: center;
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-color: black;
+    border-width: thin thick thin thick;
+    padding: 1rem;
+}
+
+blockquote cite {
+    background-color: inherit;
+} 
+
+cite {
+    text-decoration: underline;
+    background-color: white;
+}
+
+a:link {
+    color: firebrick;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    font-size: 2rem;
+}
+
+cite:hover {
+    font-size: 2rem;
+}
+
+q {
+    font-style: italic;
+}
+
+/*
+block elements - as wide as their parent - p, div, etc.
+inline elements - as wide as their cotent - a, img, strong, em, etc/.
+*/
+
+/*
+p, ul, ol, li, a, em, strong, cite, blockquote, div {
+    border: 1px dotted black;
+}
+*/
+
+div, img, footer {
+    border: 1px dotted black;
+}
+
+/*
+CSS Units -
+em = size of letter 'm' = changes from font-size to font-size
+rem = 16px
+*/

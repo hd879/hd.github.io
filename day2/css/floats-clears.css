@@ -1,0 +1,58 @@
+body {
+    background-color: wheat;
+}
+
+img {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid green;
+}
+
+.img1 {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid black;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+p {
+    text-align: justify;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid red;
+}
+
+article {
+    border: 1px solid blue;
+    width: 40rem;
+    margin: 0 auto;
+}
+
+/*
+pseudo element - formula to fix the float issue, we can look up such formulas online
+*/
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+aside {
+    text-align: center;
+    border: 2px dashed grey;
+    margin: 1rem;
+}
+
+blockquote p {
+    text-align: center;
+}
